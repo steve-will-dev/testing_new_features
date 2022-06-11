@@ -5,7 +5,7 @@
     "networkMode": "none",
         "containerDefinitions": [
           {
-            "name": "sample-app",
+            "name": "TestContainer",
             "image": "123456789012.dkr.ecr.us-west-2.amazonaws.com/aws-nodejs-sample:v1",
             "memory": 200,
             "cpu": 10,
