@@ -2,8 +2,11 @@
 
 # dependencies
 /node_modules
+/aws
 /.pnp
 .pnp.js
+awscliv2.zip
+../.vscode
 
 # testing
 /coverage

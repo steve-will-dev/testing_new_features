@@ -1,94 +1,15 @@
 {
-    "family": "example_task_3",
-    "taskRoleArn": "arn:aws:iam::123456789012:role/AmazonECSTaskS3BucketRole",
+    "family": "testing-new-features",
+    "taskRoleArn": "",
     "executionRoleArn": "",
     "networkMode": "none",
         "containerDefinitions": [
           {
-            "name": "TestContainer",
-            "image": "public.ecr.aws/ubuntu/ubuntu:latest",
+            "name": "testing-new-features",
+            "image": "sha256:7346ca5ff8261b73cc63f2aeed1823900497cbaea257d3af273e0d480ae7f772",
             "memory": 200,
             "cpu": 10,
             "essential": true
           }
-        ],
-    "volumes": [
-        {
-            "name": "",
-            "host": {
-                "sourcePath": ""
-            },
-            "dockerVolumeConfiguration": {
-                "scope": "task",
-                "autoprovision": true,
-                "driver": "",
-                "driverOpts": {
-                    "KeyName": ""
-                },
-                "labels": {
-                    "KeyName": ""
-                }
-            },
-            "efsVolumeConfiguration": {
-                "fileSystemId": "",
-                "rootDirectory": "",
-                "transitEncryption": "ENABLED",
-                "transitEncryptionPort": 0,
-                "authorizationConfig": {
-                    "accessPointId": "",
-                    "iam": "ENABLED"
-                }
-            },
-            "fsxWindowsFileServerVolumeConfiguration": {
-                "fileSystemId": "",
-                "rootDirectory": "",
-                "authorizationConfig": {
-                    "credentialsParameter": "",
-                    "domain": ""
-                }
-            }
-        }
-    ],
-    "placementConstraints": [
-        {
-            "type": "memberOf",
-            "expression": ""
-        }
-    ],
-    "requiresCompatibilities": [
-        "FARGATE"
-    ],
-    "cpu": "",
-    "memory": "",
-    "tags": [
-        {
-            "key": "",
-            "value": ""
-        }
-    ],
-    "pidMode": "task",
-    "ipcMode": "none",
-    "proxyConfiguration": {
-        "type": "APPMESH",
-        "containerName": "TestContainer",
-        "properties": [
-            {
-                "name": "",
-                "value": ""
-            }
         ]
-    },
-    "inferenceAccelerators": [
-        {
-            "deviceName": "",
-            "deviceType": ""
-        }
-    ],
-    "ephemeralStorage": {
-        "sizeInGiB": 0
-    },
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    }
 }
