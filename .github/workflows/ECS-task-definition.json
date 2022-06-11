@@ -6,7 +6,7 @@
         "containerDefinitions": [
           {
             "name": "TestContainer",
-            "image": "123456789012.dkr.ecr.us-west-2.amazonaws.com/aws-nodejs-sample:v1",
+            "image": "public.ecr.aws/ubuntu/ubuntu:latest",
             "memory": 200,
             "cpu": 10,
             "essential": true
