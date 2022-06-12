@@ -6,7 +6,7 @@
         "containerDefinitions": [
           {
             "name": "testing-new-features",
-            "image": "673414425208.dkr.ecr.eu-west-2.amazonaws.com/testing-new-features:latest",
+            "image": "",
             "memory": 200,
             "cpu": 10,
             "essential": true
